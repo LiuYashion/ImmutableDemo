@@ -1,0 +1,22 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fromJS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiuYashion/ImmutableDemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiuYashion/ImmutableDemo/issues"
+  },
+  "homepage": "https://github.com/LiuYashion/ImmutableDemo#readme",
+  "devDependencies": {
+    "immutable": "^3.8.1"
+  }
+}
