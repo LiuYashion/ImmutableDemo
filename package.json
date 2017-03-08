@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/LiuYashion/ImmutableDemo#readme",
   "devDependencies": {
+    "assert": "^1.4.1",
     "immutable": "^3.8.1"
   }
 }
