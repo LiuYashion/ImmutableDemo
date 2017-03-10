@@ -8,20 +8,20 @@
 
 
 
-import fetch from 'isomorphic-fetch'
+const fetch = require('isomorphic-fetch')
+const url = 'https://cnodejs.org/api/v1/topics'
 
 fetch(url, {
-	method: "POST",
-  	mode: "no-cors",
+	method: "GET",
+  	mode: "cors",
   	headers: {
     	"Content-Type": "application/x-www-form-urlencoded"
   	},
-  	body: "请求参数"
+  	body: ""
 }).then(function(res) {
- 	console.log("Response succeeded?", JSON.stringify(res.ok));
- 	console.log(JSON.stringify(res));
+ 	console.log(res.status)
 }).catch(function(e) {
- 	console.log("fetch fail", JSON.stringify(params));
+ 	
 });
 
 

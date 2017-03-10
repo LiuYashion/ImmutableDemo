@@ -18,6 +18,7 @@
   "homepage": "https://github.com/LiuYashion/ImmutableDemo#readme",
   "devDependencies": {
     "assert": "^1.4.1",
-    "immutable": "^3.8.1"
+    "immutable": "^3.8.1",
+    "isomorphic-fetch": "^2.2.1"
   }
 }
