@@ -19,6 +19,7 @@
   "devDependencies": {
     "assert": "^1.4.1",
     "immutable": "^3.8.1",
-    "isomorphic-fetch": "^2.2.1"
+    "isomorphic-fetch": "^2.2.1",
+    "mockjs": "^1.0.1-beta3"
   }
 }

@@ -1,31 +1,25 @@
 
 
-//var Immutable = require('immutable');
-//
-//var c = Immutable.hash(13)
-//console.log(c)
-
-
-
-
 const fetch = require('isomorphic-fetch')
-const url = 'https://cnodejs.org/api/v1/topics'
+var Mock = require('mockjs')
 
-fetch(url, {
-	method: "GET",
-  	mode: "cors",
-  	headers: {
-    	"Content-Type": "application/x-www-form-urlencoded"
-  	},
-  	body: ""
-}).then(function(res) {
- 	console.log(res.status)
-}).catch(function(e) {
- 	
+
+
+Mock.mock('http://asdasdas.cn', {
+    'name'     : '@name',
+    'age|1-100': 100,
+    'color'    : '@color'
 });
 
 
-
+fetch('http://asdasdas.cn', {
+	method: "GET",
+  	dataType:'json'
+}).then(function(res) {
+ 	console.log(res)
+}).catch(function(e) {
+ 	console.log(e)
+});
 
 
 
